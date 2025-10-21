@@ -1,0 +1,19 @@
+[project]
+name = 'skill-certificate'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.skill-certificate]
+path = 'contracts/skill-certificate.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = true
+trusted_caller = true
+callee_filter = false
